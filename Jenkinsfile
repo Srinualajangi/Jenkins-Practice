@@ -55,5 +55,11 @@ pipeline {
         always { 
             echo 'I will always say Hello again!'
         }
+        success {
+            echo 'I will run at failures'
+        }
+        failure {
+            echo 'I will run at failures'
+        }
     }
 }
