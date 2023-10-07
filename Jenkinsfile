@@ -45,11 +45,11 @@ pipeline {
                 echo 'Testing'
             }
         }
-        // stage('Deploy') {
-        //     steps {
-        //         echo 'Deploying..'
-        //     }
-        // }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying..'
+            }
+        }
     }
     post { 
         always { 
@@ -58,8 +58,8 @@ pipeline {
         success {
             echo 'I will run at failures'
         }
-        failure {
-            echo 'I will run at failures'
-        }
+        // failure {
+        //     echo 'I will run at failures'
+        // }
     }
 }
