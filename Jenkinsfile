@@ -56,7 +56,7 @@ pipeline {
             echo 'I will always say Hello again!'
         }
         success {
-            echo 'I will run at failures'
+            echo 'I will run at successs'
         }
         // failure {
         //     echo 'I will run at failures'
