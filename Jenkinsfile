@@ -1,27 +1,48 @@
+// pipeline {
+//     agent { node { label 'AGENT-1' } }
+//     stages {
+//         stage ('Build') {
+//             steps {
+//                  echo 'Building..'
+//               sh '''
+//                 ls -ltr
+//                 pwd
+//                 echo "Hello from Sample Pipeline"
+//                 printenv
+//               '''
+//             }
+//         }
+//     }
+//         stage ('Test') {
+//         steps {
+//             echo 'Testing'
+//         }
+//     }
+    
+//         stage ('Deploy') {
+//         steps {
+//             echo 'Deploying...'
+//         }
+//     }
+// }
+
 pipeline {
-    agent { node { label 'AGENT-1' } }
+    agent any
     stages {
-        stage ('Build') {
+        stage('Build') {
             steps {
-                 echo 'Building..'
-              sh '''
-                ls -ltr
-                pwd
-                echo "Hello from Sample Pipeline"
-                printenv
-              '''
+                //
             }
         }
-    }
-        stage ('Test') {
-        steps {
-            echo 'Testing'
+        stage('Test') {
+            steps {
+                //
+            }
         }
-    }
-    
-       stage ('Deploy') {
-        steps {
-            echo 'Deploying...'
+        stage('Deploy') {
+            steps {
+                //
+            }
         }
     }
 }
