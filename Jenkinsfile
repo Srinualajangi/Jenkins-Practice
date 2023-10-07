@@ -45,9 +45,9 @@ pipeline {
                 echo 'Testing'
             }
         }
-        stahjge('Deploy') {
+        stage('Deploy') {
             steps {
-                echo 'Deploying..'
+                // echo 'Deploying..'
             }
         }
     }
@@ -55,10 +55,10 @@ pipeline {
         always { 
             echo 'I will always say Hello again!'
         }
-        success {
+        success{
             echo 'I will run at successs'
         }
-        failure {
+        failure{
             echo 'I will run at failures'
         }
     }
